@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QG便签</title>
+    <link rel = stylesheet href = "index.css">
+    <script src="jquery.min.js"></script>
+    <script src ="index.js"></script>
+</head>
+
+<body>
+
+
+    <header class='w'>便签</header>
+    <div class="nav w">
+        <input class='search' type="text" placeholder="请输入要查找的对象...">
+        <form action="">
+            <button class="sbtn" type='button'>搜索</button><br>
+            <button class='creabtn' type='button'>创建便签</button>
+
+        </form>
+
+
+    </div>
+
+    <!-- 核心内容 -->
+    <div class='contain w'>
+        <!-- 每个大盒子 -->
+        <div class="datalist">
+
+        </div>
+        <!-- 创造界面 -->
+        <div id='create-form'>
+            <input type="text" class='title-contain' placeholder='标题'>
+            <textarea class='create-contain' placeholder="添加描述信息"></textarea>
+            <input type="date" class='create-time'>
+            <div id="button-group">
+                <button class="confirm" type='button'>确认</button>
+                <button class="cancel" type='button'>取消</button>
+            </div>
+        </div>
+        <div id="create-bg"></div>
+
+
+
+        <!-- 删除界面 -->
+        <div id="del-form">
+            <p>确认删除？</p>
+            <div id="button-group">
+                <button class="delete-confirm" type='button'>确认</button>
+                <button class="delete-cancel" type='button'>取消</button>
+            </div>
+        </div>
+        <div id="del-bg"></div>
+    </div>
+
+
+
+   
+</body>
+
+</html>

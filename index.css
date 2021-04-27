@@ -1,0 +1,261 @@
+.w {
+    width: 800px;
+    margin: 0 auto;
+
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+header {
+
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.search {
+    float: left;
+}
+
+.sbtn {
+    float: left;
+    margin-left: 2px;
+    background-color: rgb(231, 231, 231);
+
+    border: 1px solid rgb(118, 118, 118);
+
+}
+
+.create:hover,
+.sbtn:hover {
+    color: rgb(130, 200, 223);
+}
+
+.creabtn {
+    margin-top: 5px;
+}
+
+ul {
+
+    margin-top: 40px;
+    /* background-color: skyblue; */
+}
+
+.info {
+
+    border-radius: 4px;
+}
+
+.contain .info:nth-child(n) {
+    background-color: powderblue;
+}
+
+.contain .info:nth-child(2) {
+    background-color: pink;
+}
+
+.contain .info:nth-child(3) {
+    background-color: plum;
+}
+.contain .info:nth-child(4) {
+    background-color: rgb(160, 166, 221);
+}
+.contain .info:nth-child(5) {
+    background-color: rgb(160, 221, 160);
+}
+.contain .info:nth-child(5) {
+    background-color: rgb(190, 221, 160);
+}
+.del,
+.edit {
+    float: right;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+.delpic:hover {
+    background-color: rgb(255, 81, 0);
+    cursor: pointer;
+}
+
+.editpic:hover {
+    background-color: skyblue;
+    cursor: pointer;
+}
+
+.title,
+.info li {
+    margin-top: 3px;
+    margin-left: 25px;
+}
+
+.info .space {
+    list-style: none;
+    display: block;
+    height: 40px;
+}
+
+.contain .info ul .title {
+    padding-top: 25px;
+}
+
+.contain .info ul li:last-child {
+    padding-bottom: 10px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.date {
+    font-size: 12px;
+    color: grey;
+}
+
+#create-form {
+    display: none;
+    width: 480px;
+    height: 460px;
+    position: fixed;
+    border: 1px solid #ebebeb;
+    top: 50%;
+    left: 50%;
+    box-shadow: 0px 0px 20px #ddd;
+    background: #ffffff;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    transition: all .3s;
+}
+
+.info button {
+    background-color: transparent;
+    border: none;
+}
+
+#create-bg {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, .3);
+}
+
+#create-form .title-contain {
+    position: relative;
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 12px;
+    color: #333;
+}
+
+#create-form .create-contain {
+    position: relative;
+    width: 100%;
+    height: 70%;
+    text-align: left;
+    line-height: 40px;
+    font-size: 18px;
+
+    border-radius: 8px;
+    color: #333;
+    display: flex;
+    flex-flow: column nowrap;
+    border: 2px solid #30cfd0;
+    line-height: 1.5;
+    margin-top: 5px;
+    margin-bottom: 4px;
+    /* transition: all .5s; */
+}
+
+#create-form .create-time {
+    position: relative;
+    width: 100%;
+    border-radius: 4px;
+}
+
+#del-form {
+    display: none;
+    width: 300px;
+    height: 100px;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    box-shadow: 0px 5px 10px #ddd;
+    background: #ffffff;
+    z-index: 9999;
+    /* visibility: hidden; */
+    transition: all .3s;
+}
+
+#del-bg {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, .3);
+}
+
+#del-form p {
+    margin-bottom: 18px;
+    text-align: center;
+    font-size: 25px;
+}
+
+/* 确认与取消 */
+#button-group {
+    flex: 0 0 35px;
+    text-align: center;
+    margin-top: 12px;
+}
+
+.edit-confirm,
+.confirm,
+.cancel,
+.delete-confirm,
+.delete-cancel {
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 48px;
+    color: #fff;
+    transition: all .5s;
+}
+
+.edit-confirm,
+.confirm,
+.delete-confirm {
+    background-color: #0C6;
+}
+
+.edit-confirm,
+.confirm:hover,
+.delete-confirm:hover {
+    background-color: #096;
+    cursor: pointer;
+}
+
+.cancel,
+.delete-cancel {
+    background-color: #C66;
+}
+
+.cancel:hover,
+.delete-cancel:hover {
+    background-color: #C36;
+
+}
